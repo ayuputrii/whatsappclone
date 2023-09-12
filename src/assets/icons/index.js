@@ -22,8 +22,15 @@ import IconShare from './ic_share.svg'
 import IconInfo from './ic_info.svg'
 import IconArrowRightLine from './ic_arrow_right_s_line.svg'
 import IconMessage from './ic_message.svg'
+import IconMessageWhite from './ic_message_white.svg'
 import IconBlock from './ic_block.svg'
 import IconDislike from './ic_dislike.svg'
+import IconUsers from './ic_users.svg'
+import IconUserAdd from './ic_user_add.svg'
+import IconGroup from './ic_group_fill.svg'
+import IconStore from './ic_store.svg'
+import IconSearchBlack from './ic_search_black.svg'
+import IconNotFound from './ic_not_found.svg'
 
 export {
     IconArrowLeft,
@@ -50,6 +57,13 @@ export {
     IconInfo,
     IconArrowRightLine,
     IconMessage,
+    IconMessageWhite,
     IconBlock,
-    IconDislike
+    IconDislike,
+    IconUsers,
+    IconGroup,
+    IconUserAdd,
+    IconStore,
+    IconSearchBlack,
+    IconNotFound
 }

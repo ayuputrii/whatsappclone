@@ -1,11 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-const Settings = () => {
-  return (
-    <React.Fragment>
-      
-    </React.Fragment>
-  )
-}
+const SettingsPage = () => {
+  return <React.Fragment />;
+};
 
-export default Settings
+export default SettingsPage;

@@ -1,6 +1,6 @@
-import React from 'react'
-import { Image, StyleSheet } from 'react-native'
-import { ImageNotFound } from '../../assets'
+import React from 'react';
+import {Image, StyleSheet} from 'react-native';
+import {ImageNotFound} from '../../assets';
 
 const ImageWithNotFound = ({photo, imgStyle}) => {
   return (
@@ -11,16 +11,16 @@ const ImageWithNotFound = ({photo, imgStyle}) => {
         <Image source={ImageNotFound} style={styles.img} />
       )}
     </React.Fragment>
-  )
-}
+  );
+};
 
 const styles = StyleSheet.create({
   img: {
-    width: 70, 
-    height: 70, 
+    width: 70,
+    height: 70,
     marginRight: 2,
-    resizeMode: "cover"
+    resizeMode: 'cover',
   },
-})
+});
 
-export default ImageWithNotFound
+export default ImageWithNotFound;

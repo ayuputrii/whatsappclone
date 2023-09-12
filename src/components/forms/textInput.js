@@ -1,8 +1,16 @@
-import React from 'react'
-import { StyleSheet, TextInput as InputText } from 'react-native';
-import { colors } from '../../utils/colors';
+import React from 'react';
+import {StyleSheet, TextInput as InputText} from 'react-native';
+import {colors} from '../../utils/colors';
 
-const TextInput = ({editable, multiline, value, onContentSizeChange, onChangeText, placeholder}) => {
+const TextInput = ({
+  editable,
+  multiline,
+  value,
+  onContentSizeChange,
+  onChangeText,
+  placeholder,
+  placeholderTextColor,
+}) => {
   return (
     <InputText
       editable={editable}
@@ -10,20 +18,21 @@ const TextInput = ({editable, multiline, value, onContentSizeChange, onChangeTex
       style={styles.textInput}
       value={value}
       placeholder={placeholder}
+      placeholderTextColor={placeholderTextColor}
       onContentSizeChange={onContentSizeChange}
       onChangeText={onChangeText}
     />
-  )
-}
+  );
+};
 
 const styles = StyleSheet.create({
   textInput: {
     width: '80%',
-    marginHorizontal: "2%",
+    marginHorizontal: '2%',
     fontSize: 16,
     opacity: 0.4,
-    color: colors.black
+    color: colors.black,
   },
-})
+});
 
-export default TextInput
+export default TextInput;

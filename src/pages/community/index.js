@@ -1,11 +1,14 @@
-import React from 'react'
+import React from 'react';
+import {styles} from './styles';
+import {View} from 'react-native';
+import {NotFoundPage} from '../../components';
 
 const CommunityPage = () => {
   return (
-    <React.Fragment>
-        
-    </React.Fragment>
-  )
-}
+    <View style={styles.container}>
+      <NotFoundPage />
+    </View>
+  );
+};
 
-export default CommunityPage
+export default CommunityPage;

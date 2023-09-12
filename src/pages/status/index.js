@@ -1,11 +1,14 @@
-import React from 'react'
+import React from 'react';
+import {View} from 'react-native';
+import {styles} from './style';
+import {NotFoundPage} from '../../components';
 
 const StatusPage = () => {
   return (
-    <React.Fragment>
+    <View style={styles.container}>
+      <NotFoundPage />
+    </View>
+  );
+};
 
-    </React.Fragment>
-  )
-}
-
-export default StatusPage
+export default StatusPage;
