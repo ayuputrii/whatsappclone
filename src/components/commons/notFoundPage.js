@@ -1,6 +1,7 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import {IconNotFound} from '../../assets';
+import {colors} from '../../utils/colors';
 
 const NotFoundPage = () => {
   return (
@@ -20,6 +21,7 @@ const styles = StyleSheet.create({
   notFound: {
     fontWeight: 'bold',
     fontSize: 20,
+    color: colors.lightBlack,
   },
 });
 

@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import {colors} from '../../../utils/colors';
@@ -7,7 +8,7 @@ import {
   IconDots,
   IconVideoCall,
 } from '../../../assets';
-import {Button, Photo} from '../../commons';
+import {Button, Gap, Photo} from '../../commons';
 
 const ChatHeader = ({navigation, name, uri, goInformationPage}) => {
   return (
@@ -16,7 +17,8 @@ const ChatHeader = ({navigation, name, uri, goInformationPage}) => {
         <Button
           onPress={() => navigation.navigate('ChatsPage')}
           buttonStyle={styles.leftContent}>
-          <IconArrowLeft width={32} height={32} />
+          <IconArrowLeft width={25} height={25} />
+          <Gap width={8} />
           <Photo uri={uri} />
         </Button>
         <Button buttonStyle={styles.viewName} onPress={goInformationPage}>
@@ -25,13 +27,13 @@ const ChatHeader = ({navigation, name, uri, goInformationPage}) => {
       </View>
       <View style={styles.rightContent}>
         <Button buttonStyle={{marginRight: 10}}>
-          <IconVideoCall width={24} height={24} />
+          <IconVideoCall width={22} height={22} />
         </Button>
         <Button>
           <IconCall width={22} height={22} />
         </Button>
         <Button>
-          <IconDots width={24} height={24} />
+          <IconDots width={22} height={22} />
         </Button>
       </View>
     </View>
@@ -42,9 +44,8 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     backgroundColor: colors.tealGreen,
-    height: 100,
+    height: 80,
     width: '100%',
-    paddingTop: 20,
     paddingHorizontal: 6,
     alignItems: 'center',
     justifyContent: 'space-between',

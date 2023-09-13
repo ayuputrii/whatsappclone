@@ -29,9 +29,9 @@ const topTabNavigation = () => {
           tabBarIcon: ({focused}) => (
             <View>
               {focused ? (
-                <IconTeam width={30} height={20} />
+                <IconTeam width={20} height={20} />
               ) : (
-                <IconTeamInActive width={30} height={20} />
+                <IconTeamInActive width={20} height={20} />
               )}
             </View>
           ),
@@ -83,12 +83,12 @@ const topTabNavigation = () => {
 
 const styles = StyleSheet.create({
   tabBarLabelStyle: {
-    fontSize: 16,
+    fontSize: 14,
     fontWeight: 'bold',
     fontStyle: 'normal',
     textTransform: 'capitalize',
     lineHeight: 24,
-    marginTop: 14,
+    marginTop: 10,
   },
   tabBarStyle: {
     backgroundColor: colors.tealGreen,
@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
     borderTopColor: colors.tealGreen,
   },
   tabBarIconStyle: {
-    marginTop: 14,
+    marginTop: 10,
     marginHorizontal: 14,
   },
   tabBarItemStyle: {

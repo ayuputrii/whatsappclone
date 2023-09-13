@@ -1,4 +1,5 @@
-import React, {useState} from 'react';
+/* eslint-disable react/no-unstable-nested-components */
+import React from 'react';
 import {NavigationContainer, useNavigation} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import topTabNavigation from './topTabNavigation';
@@ -14,7 +15,6 @@ const Stack = createNativeStackNavigator();
 
 const RootNavigator = () => {
   const navigation = useNavigation();
-  const [search, setSearch] = useState(false);
 
   return (
     <Stack.Navigator>
@@ -31,7 +31,7 @@ const RootNavigator = () => {
                   borderless: true,
                 }}
                 onPress={() => {}}>
-                <IconCameraWhite height={24} width={24} />
+                <IconCameraWhite height={25} width={25} />
               </Pressable>
               <Pressable
                 android_ripple={{
@@ -40,7 +40,7 @@ const RootNavigator = () => {
                   borderless: true,
                 }}
                 onPress={() => navigation.navigate('SearchChatPage')}>
-                <IconSearch height={24} width={24} />
+                <IconSearch height={25} width={25} />
               </Pressable>
               <Pressable
                 android_ripple={{
@@ -49,7 +49,7 @@ const RootNavigator = () => {
                   borderless: true,
                 }}
                 onPress={() => {}}>
-                <IconDots height={24} width={24} />
+                <IconDots height={25} width={25} />
               </Pressable>
             </View>
           ),
@@ -152,7 +152,7 @@ const styles = StyleSheet.create({
   headerTitleStyle: {
     fontWeight: 'bold',
     color: '#FFF',
-    fontSize: 24,
+    fontSize: 20,
   },
   headerRight: {
     flexDirection: 'row',

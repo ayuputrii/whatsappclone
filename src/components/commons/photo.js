@@ -16,10 +16,10 @@ const Photo = ({uri, imgStyle}) => {
 
 const styles = StyleSheet.create({
   photoProfile: {
-    width: 50,
-    height: 50,
-    borderRadius: 50,
-    marginRight: 16,
+    width: 45,
+    height: 45,
+    borderRadius: 45,
+    marginRight: 14,
     resizeMode: 'cover',
   },
 });

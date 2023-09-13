@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
   },
   message: {
     fontSize: 14,
-    color: colors.lightGray,
+    color: colors.gray,
   },
   rightContent: {
     flexDirection: 'column',
