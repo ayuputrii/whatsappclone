@@ -11,7 +11,7 @@ export const styles = StyleSheet.create({
     padding: 16,
   },
   titleContact: {
-    fontSize: 14,
+    fontSize: 12,
     color: colors.gray,
     fontWeight: 'bold',
   },

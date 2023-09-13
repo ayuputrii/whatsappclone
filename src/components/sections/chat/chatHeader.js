@@ -17,21 +17,23 @@ const ChatHeader = ({navigation, name, uri, goInformationPage}) => {
         <Button
           onPress={() => navigation.navigate('ChatsPage')}
           buttonStyle={styles.leftContent}>
-          <IconArrowLeft width={25} height={25} />
+          <IconArrowLeft width={30} height={30} />
           <Gap width={8} />
           <Photo uri={uri} />
         </Button>
         <Button buttonStyle={styles.viewName} onPress={goInformationPage}>
-          <Text style={styles.name}>{name}</Text>
+          <Text style={styles.name}>{name?.substring(0, 10) + '...'}</Text>
         </Button>
       </View>
       <View style={styles.rightContent}>
         <Button buttonStyle={{marginRight: 10}}>
           <IconVideoCall width={22} height={22} />
         </Button>
+        <Gap width={16} />
         <Button>
           <IconCall width={22} height={22} />
         </Button>
+        <Gap width={16} />
         <Button>
           <IconDots width={22} height={22} />
         </Button>
@@ -55,10 +57,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   viewName: {
-    width: 180,
+    width: '45%',
   },
   name: {
-    fontSize: 20,
+    fontSize: 16,
     color: colors.white,
     fontWeight: 'bold',
   },
@@ -66,7 +68,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    width: 120,
   },
 });
 

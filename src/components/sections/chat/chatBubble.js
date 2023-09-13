@@ -178,7 +178,7 @@ const styles = StyleSheet.create({
     marginBottom: -6,
   },
   timeText: {
-    fontSize: 14,
+    fontSize: 12,
     color: colors.gray,
   },
   containerSender: {
@@ -225,7 +225,7 @@ const styles = StyleSheet.create({
     textAlign: 'right',
   },
   timeTextRight: {
-    fontSize: 14,
+    fontSize: 12,
     color: colors.gray,
     marginRight: 2,
   },

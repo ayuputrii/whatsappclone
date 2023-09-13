@@ -76,13 +76,13 @@ const styles = StyleSheet.create({
     marginBottom: 2,
     fontWeight: 'bold',
     color: colors.black,
-    fontSize: 16,
+    fontSize: 14,
   },
   content: {
     flexDirection: 'row',
   },
   message: {
-    fontSize: 14,
+    fontSize: 12,
     color: colors.gray,
   },
   rightContent: {
@@ -94,6 +94,7 @@ const styles = StyleSheet.create({
   time: {
     color: colors.gray,
     marginBottom: 4,
+    fontSize: 12,
   },
   viewCount: {
     width: 25,

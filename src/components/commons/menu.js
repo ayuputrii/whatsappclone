@@ -34,12 +34,12 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     justifyContent: 'center',
     alignItems: 'center',
-    marginRight: 16,
+    marginRight: 14,
   },
   title: {
     fontWeight: 'bold',
     color: colors.black,
-    fontSize: 18,
+    fontSize: 16,
   },
   rightContent: {
     flexDirection: 'column',

@@ -31,6 +31,7 @@ const ChatButton = () => {
             multiline
             value={newMessage}
             placeholder="Input message"
+            placeholderTextColor={colors.lightBlack}
             onContentSizeChange={v => {
               setHeightBox(v.nativeEvent.contentSize.height);
             }}

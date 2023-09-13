@@ -1,5 +1,5 @@
 import React from 'react';
-import {Image, StyleSheet, View} from 'react-native';
+import {Image, StyleSheet} from 'react-native';
 import {PhotoProfileNotFound} from '../../assets';
 
 const Photo = ({uri, imgStyle}) => {
@@ -16,9 +16,9 @@ const Photo = ({uri, imgStyle}) => {
 
 const styles = StyleSheet.create({
   photoProfile: {
-    width: 45,
-    height: 45,
-    borderRadius: 45,
+    width: 50,
+    height: 50,
+    borderRadius: 50,
     marginRight: 14,
     resizeMode: 'cover',
   },

@@ -83,7 +83,7 @@ const topTabNavigation = () => {
 
 const styles = StyleSheet.create({
   tabBarLabelStyle: {
-    fontSize: 14,
+    fontSize: 12,
     fontWeight: 'bold',
     fontStyle: 'normal',
     textTransform: 'capitalize',
